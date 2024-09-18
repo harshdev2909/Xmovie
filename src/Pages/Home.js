@@ -1,11 +1,25 @@
 import React from 'react'
 import SelectMovie from '../Components/SelectMovie'
+import LastBooking from '../Components/LastBooking'
+import TimeSchedule from '../Components/TimeSchedule'
+import SelectSeat from '../Components/SelectSeat';
+import '../css/Home.css'
 
 const Home = () => {
   return (
-    <div>
+    <div className='container'>
+      <div className='wrapper'>
         <div className='select_movie_component'>
         <SelectMovie/>
+        </div>
+        <div className='last_booking'>
+        <LastBooking/>
+        </div>
+        </div>
+        <div className='time_seats'>
+          <TimeSchedule/>
+          <SelectSeat/>
+         <button className='BN-btn'>Book Now</button>
         </div>
     </div>
   )

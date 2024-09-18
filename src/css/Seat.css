@@ -1,0 +1,12 @@
+
+.SS_heading{
+    width: 100%;
+    font-size: 22px;
+    color: black;
+}
+.SS_main{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: black;
+}
