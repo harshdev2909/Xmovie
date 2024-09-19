@@ -1,6 +1,6 @@
 import React from 'react'
 import { seats } from '../data'
-
+import '../css/last.css';
 const LastBooking = () => {
   return (
     <div className='last_booking'>
