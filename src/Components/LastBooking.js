@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { seats } from '../data'
 import '../css/last.css';
 const LastBooking = () => {
