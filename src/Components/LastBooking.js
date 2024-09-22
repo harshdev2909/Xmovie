@@ -22,4 +22,4 @@ const LastBooking = () => {
   )
 }
 
-export default LastBooking
+export default LastBooking;
