@@ -8,4 +8,4 @@ const RadioComponent = ({text,key}) => {
   )
 }
 
-export default RadioComponent
+export default RadioComponent;
