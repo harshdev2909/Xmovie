@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/input.css'
+import '../css/input.css';
 const SeatInput = ({text,key}) => {
   return (
     <div className='form-check-label'>
@@ -9,4 +9,4 @@ const SeatInput = ({text,key}) => {
   )
 }
 
-export default SeatInput
+export default SeatInput;

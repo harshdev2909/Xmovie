@@ -18,4 +18,4 @@ const SelectSeat = () => {
   )
 }
 
-export default SelectSeat
+export default SelectSeat;
