@@ -1,7 +1,7 @@
-import React from 'react'
-import { seats } from '../data'
-import '../css/Seat.css'
-import SeatInput from './SeatInput'
+import React from 'react';
+import { seats } from '../data';
+import '../css/Seat.css';
+import SeatInput from './SeatInput';
 
 const SelectSeat = () => {
   return (
