@@ -20,4 +20,4 @@ const TimeSchedule = () => {
   )
 }
 
-export default TimeSchedule
+export default TimeSchedule;
