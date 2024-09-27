@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { slots } from '../data'
 import RadioComponent from './RadioComponent'
 import '../css/Time.css'
