@@ -27,7 +27,7 @@ const Home = () => {
       //validation successfull
       handlePostBooking();
     }
-  }
+  };
 
   return (
     <div className='container'>
@@ -42,7 +42,9 @@ const Home = () => {
         <div className='time_seats'>
           <TimeSchedule/>
           <SelectSeat/>
-         <button className='BN-btn' onClick={()=>{handleBookNow()}}>Book Now</button>
+         <button className='BN-btn' onClick={() => {
+                handleBookNow();
+              }}>Book Now</button>
         </div>
     </div>
   )

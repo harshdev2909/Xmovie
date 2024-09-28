@@ -5,13 +5,14 @@ import BsContext from '../context/BsContext';
 const LastBooking = () => {
   const context = useContext(BsContext)
 
-  const {movie , changeMovie,handleGetBooking,lastBooking} = context
-  const {time , ChangeTime} = context
-  const{noofseat,changeNoofseat} = context
+  const {handleGetBooking,lastBooking} = context
+  
 
-  useEffect(()=>{
-    handleGetBooking()
-  },[])
+  useEffect(() => {
+    handleGetBooking(); // Call the API to get last booking details
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <div className='last_booking'>
       <h2 className='heading'>Last Booking</h2>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import BsContext from "./BsContext";
-
+import axios from 'axios'
 const BsState = (props) =>{
 
     const[ErrorPopup,setErrorPopup] = useState(false)
@@ -18,16 +18,18 @@ const BsState = (props) =>{
     })
     const [lastBooking,setLastbooking] = useState(null)
 
-    const handlePostBooking = async() =>{
-        const response = await fetch('http://localhost:5000/api/booking',{
-            method : 'post',
+    const handlePostBooking = async () =>{
+        const response = await fetch(
+            `http://localhost:5000/api/booking`,
+            {
+            method : "POST" ,
             headers:{
                 "Content-Type" : "application/json",
             },
             body:JSON.stringify({movie:movie,slot:time,seats:noofseat}),
-        })
+        });
 
-        const data = await response.json()
+        const data = await response.json();
 
         setErrorPopup(true)
         setErrorMessage(data.message)
@@ -45,12 +47,11 @@ const BsState = (props) =>{
 
 
     const handleGetBooking = async()=> {
-        const response = await fetch(
-            "http://localhost:5000/api/booking",{
-                method:"Get"
+        const response = await fetch(`http://localhost:5000/api/booking`,{
+                method:"GET"
             }
         )
-        const data = await response.json()
+        const data = await response.json();
 
         setLastbooking(data.data)
     }
