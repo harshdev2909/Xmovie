@@ -6,6 +6,10 @@ import SelectSeat from '../Components/SelectSeat';
 import '../css/Home.css'
 
 const Home = () => {
+  const handleBookNow = () =>{
+
+  }
+  
   return (
     <div className='container'>
       <div className='wrapper'>
@@ -19,7 +23,7 @@ const Home = () => {
         <div className='time_seats'>
           <TimeSchedule/>
           <SelectSeat/>
-         <button className='BN-btn'>Book Now</button>
+         <button className='BN-btn' onClick={()=>{handleBookNow()}}>Book Now</button>
         </div>
     </div>
   )

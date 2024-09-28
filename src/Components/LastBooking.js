@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { seats } from '../data';
 import '../css/last.css';
+import BsContext from '../context/BsContext';
 const LastBooking = () => {
+  const context = useContext(BsContext)
+
+  const {movie , changeMovie} = context
+  const {time , ChangeTime} = context
+  const{noofseat,changeNoofseat} = context
   return (
     <div className='last_booking'>
       <h2 className='heading'>Last Booking</h2>
@@ -16,8 +22,8 @@ const LastBooking = () => {
               ))}
             </ul>
       </div>
-      <p className='slots' style={{textAlign:"left"}}>Slot : 00:00 AM<span></span></p>
-      <p className='movie'> Movie : <span>Tenet</span></p>
+      <p className='slots' style={{textAlign:"left"}}>Slot : {time}<span></span></p>
+      <p className='movie'> Movie : <span>{movie}</span></p>
     </div>
   )
 }

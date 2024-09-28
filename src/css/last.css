@@ -35,14 +35,20 @@
     margin-bottom: 10px;
     text-align: center;
   }  
-  .slot,
-  .movie {
+.movie {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: 500;
+    color: black;
+  }
+.slots {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
   }
   
-.slot span,
+.slots span,
 .movie span {
     font-weight: 400;
     font-size: 16px;
