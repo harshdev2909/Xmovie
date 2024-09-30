@@ -30,7 +30,7 @@ const LastBooking = () => {
               ))}
             </ul>
       </div>
-      <p className='slots' style={{textAlign:"left"}}>Slot : {lastBooking.time}<span></span></p>
+      <p className='slots' style={{textAlign:"left"}}>Slot : {lastBooking.slot}<span></span></p>
       <p className='movie'> Movie : <span>{lastBooking.movie}</span></p>
           </>
         ) :(
