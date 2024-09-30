@@ -25,7 +25,7 @@ const LastBooking = () => {
               {seats.map((seat, index) => (
                 // Display each seat and its count
                 <li className="seat_value" key={index}>
-                  (seat) : {Number(lastBooking.seats[seat])}
+                  {seat} : {Number(lastBooking.seats[seat])}
                 </li>
               ))}
             </ul>
