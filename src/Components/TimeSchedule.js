@@ -5,7 +5,7 @@ import '../css/Time.css'
 import BsContext from '../context/BsContext';
 
 const TimeSchedule = () => {
-  const context = useContext(BsContext)
+  const context = useContext(BsContext);
 
   const {time , ChangeTime} = context
 
