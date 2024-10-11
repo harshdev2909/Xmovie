@@ -29,4 +29,4 @@ const SelectMovie = () => {
   )
 }
 
-export default SelectMovie
+export default SelectMovie;
