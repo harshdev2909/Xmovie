@@ -1,17 +1,16 @@
-import React from 'react'
-import Home from './Pages/Home'
-import BsState from './context/BsState'
-import Main from './Pages/Main'
+import React from 'react';
+import { BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
+import BsState from './context/BsState';
+import Main from './Pages/Main'; 
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter> 
       <BsState>
-      {/* <Home/> */}
-      <Main/>
+        <Main />
       </BsState>
-    </div>
-  )
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
