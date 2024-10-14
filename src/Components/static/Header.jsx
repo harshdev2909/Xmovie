@@ -37,8 +37,5 @@ function Home() {
   )
 }
 
-<<<<<<< HEAD
-export default Header;
-=======
 export default Home
->>>>>>> cd83a3de65475b04cce8fc9139ece4d318b4ad6b
+
