@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import BsState from './context/BsState';
 import Main from './Pages/Main'; 
 
