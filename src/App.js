@@ -9,7 +9,7 @@ const App = () => {
     <BrowserRouter> 
       <BsState>
         <Main />
-        <Routes/>
+        {/* <Routes/> */}
       </BsState>
     </BrowserRouter>
   );
